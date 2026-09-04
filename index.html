@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candleur | Handmade Candles</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,400&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">Candlelueur</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#shop">Shop</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="cart-icon">Cart (<span id="cart-count">0</span>)</div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <h1>Light Up Your Mood</h1>
+            <p>Hand-poured, organic soy candles crafted with love.</p>
+            <a href="#shop" class="btn">Shop Collection</a>
+        </div>
+    </header>
+
+    <!-- Shop Section -->
+    <section id="shop" class="shop-section">
+        <h2>Best Sellers</h2>
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <img src="https://5.imimg.com/data5/SELLER/Default/2023/7/329928357/RM/WI/DP/193985629/9b6e41c6b22a948ee670fbcd2d8d43d8-jpg-250x250.jpg"/>
+                <h3>Bubbly Bombay</h3>
+                <p class="price">₹140</p>
+                <button class="btn-add" onclick="addToCart('Bubbly Bombay')">Add to Cart</button>
+                <button class="btn-add" onclick=""</button>
+            </div>
+            <!-- Product 2 -->
+            <div class="product-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDhs4xLBw-qmpzBJ27au451onKA7KbjloQPQ&s"/>
+                <h3>RAVANGLA ROSE SOLACE</h3>
+                <p class="price">₹140</p>
+                <button class="btn-add" onclick="addToCart('RAVANGLA ROSE SOLACE')">Add to Cart</button>
+            </div>
+            <!-- Product 3 -->
+            <div class="product-card">
+               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTok5v7Qsju7t1LHfTp54MX-oSKfUz8HyKuQ&s"/>
+                <h3>BIKANEA BEAR Candles</h3>
+                <p class="price">₹120</p>
+                <button class="btn-add" onclick="addToCart('BIKANEAR BEAR Candles')">Add to Cart</button>
+            </div>
+            <!-- Product 4 -->
+            <div class="product-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTq1lUCNUvHBQBGuSTvPSbdkDMwswo4cDPudw&s"/>
+                <h3>CALCUTTA CHAI REVERIE</h3>
+                <p class="price">₹100</p>
+                <button class="btn-add" onclick="addToCart('CALCUTTA CHAI REVERIE')">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="about-text">
+            <h2>Our Story</h2>
+            <p> from coding to crafting , we  traded screns for scents to create candleuer, where evry candle is a spark of warmth legance and mindful design. Born from curiosity and precision,our hand -poured creation blend technolog's attention  to detail with art of Light.  @candleuer    </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Candlelueur Candles. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

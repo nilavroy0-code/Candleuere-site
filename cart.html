@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candlelueur | Cart</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,400&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body class="cart-page">
+    <nav class="navbar">
+        <div class="logo">Candlelueur</div>
+        <ul class="nav-links">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#shop">Shop</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <a href="cart.html" class="cart-icon">Cart (<span id="cart-count">0</span>)</a>
+    </nav>
+
+    <main class="cart-container">
+        <div class="cart-heading">
+            <h1>Your Shopping Cart</h1>
+            <p>Review your selected candles and enter your details to place your order.</p>
+        </div>
+
+        <section class="cart-box">
+            <div class="cart-products">
+                <h2>Selected Products</h2>
+                <div id="cart-items"></div>
+
+                <div class="cart-summary">
+                    <span>Total</span>
+                    <strong id="cart-total">₹0</strong>
+                </div>
+
+                <button type="button" class="clear-cart" onclick="clearCart()">Clear Cart</button>
+                <a href="index.html#shop" class="continue-shopping">← Continue Shopping</a>
+            </div>
+
+            <div class="customer-form-box">
+                <h2>Customer Details</h2>
+                <form id="checkout-form">
+                    <label for="customer-name">Full Name</label>
+                    <input type="text" id="customer-name" name="name" placeholder="Enter your full name" required>
+
+                    <label for="customer-address">Address</label>
+                    <textarea id="customer-address" name="address" rows="4" placeholder="Enter your complete address" required></textarea>
+
+                    <label for="customer-email">Gmail / Email</label>
+                    <input type="email" id="customer-email" name="email" placeholder="example@gmail.com" required>
+
+                    <label for="customer-phone">Phone Number</label>
+                    <input type="tel" id="customer-phone" name="phone" placeholder="Enter your 10-digit phone number"
+                           pattern="[0-9]{10}" maxlength="10" required>
+
+                    <button type="submit" class="checkout-btn">Place Order</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Candlelueur Candles. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
